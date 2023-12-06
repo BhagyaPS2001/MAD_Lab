@@ -21,12 +21,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         logBtn=findViewById(R.id.login);
-        uname=findViewById(R.id.username);git 
+        uname=findViewById(R.id.username);
         pass=findViewById(R.id.password);
 
         logBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if(uname.equals(userName) && pass.equals(pwd)){
                     Toast.makeText(MainActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
                 }
